@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {
     className?: string;
@@ -28,10 +27,9 @@ const ImageBlock = ({
         {image && (
             <div className="w-72 h-60 relative overflow-hidden rounded-xl shadow-md md:w-96 md:h-64">
                 <a href={link} target="_blank" rel="noopener noreferrer">
-                    <Image
+                    <img
                         src={image}
                         alt={title || "Project Image"}
-                        fill
                         className="object-cover rounded-xl transition-transform duration-300 hover:scale-105"
                     />
                 </a>

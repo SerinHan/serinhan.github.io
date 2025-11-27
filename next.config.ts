@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: '/serinhan.github.io',
+  assetPrefix: '/serinhan.github.io',
 };
 
 export default nextConfig;
